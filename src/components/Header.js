@@ -8,7 +8,7 @@ const Header = () =>
   <Section>
     <Row>
       <Col>
-        <h1>Header</h1>
+        <h1>Header Edit</h1>
       </Col>
     </Row>
   </Section>
