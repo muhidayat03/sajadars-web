@@ -1,7 +1,3 @@
-import { Row, Col } from "../../components/Grid";
-import styled from "styled-components";
-import BannerImage from "../../assets/banner_image.svg";
-
 const Header = () => (
   <Section>
     <Col padding="0">
@@ -30,45 +26,6 @@ const Header = () => (
 const Section = styled.div`
   width: 100%;
   height: 100vh;
-`;
-
-const SubSection = styled.div`
-  width: 100%;
-  height: 100vh;
-  padding-left: ${({ padding }) => padding || null};
-  display: flex;
-  align-items: ${({ align }) => align || "center"};
-`;
-
-const Image = styled.img`
-  width: 100%;
-`;
-
-const Title = styled.span`
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  color: #646464;
-`;
-
-const BigTitle = styled.span`
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 78px;
-  color: #212121;
-`;
-
-const Paragraph = styled.span`
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #646464;
 `;
 
 const Button = styled.button`
