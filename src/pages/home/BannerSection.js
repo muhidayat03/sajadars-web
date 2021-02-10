@@ -27,8 +27,6 @@ const Header = () => (
   </Section>
 );
 
-export default Header;
-
 const Section = styled.div`
   width: 100%;
   height: 100vh;
@@ -89,3 +87,5 @@ const Button = styled.button`
     background: #4fbc9d;
   }
 `;
+
+export default Header;
