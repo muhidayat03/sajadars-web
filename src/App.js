@@ -12,16 +12,16 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <BannerSection/>
-      <LandasanSection/>
-      <WorkSection/>
-      <ProjectSection/>
-      <TeamSection/>
-      <YoutubeSection/>
-      <Footer/>
-    </>
+    <div style={{ maxWidth: 1300, margin: 'auto' }}>
+      <Header />
+      <BannerSection />
+      <LandasanSection />
+      <WorkSection />
+      <ProjectSection />
+      <TeamSection />
+      <YoutubeSection />
+      <Footer />
+    </div>
   );
 }
 

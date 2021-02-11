@@ -24,13 +24,13 @@ export const Col = styled.div`
   align-items: ${({ align }) => align || 'center'};
   justify-content: ${({ justify }) => justify || 'center'};
   margin: ${({ margin }) => margin || null};
-  padding: ${({ padding }) => padding || '1.2rem'};
+  padding: ${({ padding }) => padding || '1.4rem'};
 
   ${({ xs }) => (xs ? getWidthString(xs) : 'width: 100%')};
 
   @media only screen and (min-width: 400px) {
     ${({ sm }) => sm && getWidthString(sm)}
-  }
+  } 
 
   @media only screen and (min-width: 600px) {
     ${({ md }) => md && getWidthString(md)}

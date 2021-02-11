@@ -1,91 +1,63 @@
 import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
 import BannerImage from "../../assets/banner_image.svg";
+import Button from "../../components/Button";
+import { Title, BigTitle, Paragraph } from "../../components/Typography"
 
 const Header = () => (
   <Section>
-    <Col padding="0">
-      <SubSection padding="100px">
-        <Row>
-          <Title>SAJADARS PROJECT</Title>
-          <BigTitle>Bangun Masjid Lebih Baik</BigTitle>
-          <Paragraph>
-            Berdiri sejak Agustus 2019, SAJADARS merupakan organisasi nirlaba
-            yang bergerak dalam perencanaan desain arsitektur masjid dan
-            fasilitasnya. Mari berkontribusi bersama kami untuk beramal dan
-            berkarya membuat masjid lebih baik.
+    <Row direction='row-reverse' align='flex-end'>
+      <RightContainer lg={2} md={1} sm={1}>
+        <div style={{ paddingTop: 40 }}>
+          <Image src={BannerImage} alt="Banner" />
+        </div>
+      </RightContainer>
+      <LeftContainer lg={2} md={1} sm={1} direction='column' align='start'>
+        <Title>SAJADARS PROJECT</Title>
+        <BigTitle>Bangun Masjid <br /> Lebih Baik</BigTitle>
+        <Paragraph>
+          Berdiri sejak Agustus 2019, SAJADARS merupakan organisasi nirlaba
+          yang bergerak dalam perencanaan desain arsitektur masjid dan
+          fasilitasnya. Mari berkontribusi bersama kami untuk beramal dan
+          berkarya membuat masjid lebih baik.
           </Paragraph>
-          <Row padding="20px 0">
-            <Button>LEBIH LANJUT</Button>
-          </Row>
-        </Row>
-      </SubSection>
-      <SubSection align="flex-end">
-        <Image src={BannerImage} alt="Banner" />
-      </SubSection>
-    </Col>
-  </Section>
+        <StyledButton>LEBIH LANJUT</StyledButton>
+      </LeftContainer>
+    </Row>
+  </Section >
 );
 
 export default Header;
 
 const Section = styled.div`
-  width: 100%;
-  height: 100vh;
+  width: 100%; 
+  background-color: white;
+  padding:40px;
+  @media only screen and (max-width: 600px) {
+    padding:0px;
+  } 
 `;
 
-const SubSection = styled.div`
-  width: 100%;
-  height: 100vh;
-  padding-left: ${({ padding }) => padding || null};
-  display: flex;
-  align-items: ${({ align }) => align || "center"};
+const LeftContainer = styled(Col)`
+  @media only screen and (min-width: 600px) {
+    padding : 40px 20px 40px 0px;
+  } 
+`;
+
+const RightContainer = styled(Col)`
+  @media only screen and (max-width: 600px) {
+    padding : 0px;
+  } 
 `;
 
 const Image = styled.img`
   width: 100%;
 `;
 
-const Title = styled.span`
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  color: #646464;
-`;
-
-const BigTitle = styled.span`
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 78px;
-  color: #212121;
-`;
-
-const Paragraph = styled.span`
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #646464;
-`;
-
-const Button = styled.button`
-  width: 208.12px;
-  height: 60px;
-  background: #37806b;
-  border-radius: 20px 0px;
-  border: none;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  :hover {
-    background: #4fbc9d;
-  }
+const StyledButton = styled(Button)`
+  margin-top: 20px;
+  margin-bottom: 60px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 20px;
+  } 
 `;
