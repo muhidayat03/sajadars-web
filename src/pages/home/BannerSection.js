@@ -9,19 +9,19 @@ const Header = () => (
     <Row direction='row-reverse' align='flex-end'>
       <RightContainer lg={2} md={1} sm={1}>
         <div style={{ paddingTop: 40 }}>
-          <Image src={BannerImage} alt="Banner" />
+          <Image data-aos="zoom-in" data-aos-anchor-placement="center-bottom" src={BannerImage} alt="Banner" />
         </div>
       </RightContainer>
       <LeftContainer lg={2} md={1} sm={1} direction='column' align='start'>
-        <Title>SAJADARS PROJECT</Title>
-        <BigTitle>Bangun Masjid <br /> Lebih Baik</BigTitle>
-        <Paragraph>
+        <Title data-aos="fade-up">SAJADARS PROJECT</Title>
+        <BigTitle data-aos="fade-up">Bangun Masjid <br /> Lebih Baik</BigTitle>
+        <Paragraph data-aos="fade-up">
           Berdiri sejak Agustus 2019, SAJADARS merupakan organisasi nirlaba
           yang bergerak dalam perencanaan desain arsitektur masjid dan
           fasilitasnya. Mari berkontribusi bersama kami untuk beramal dan
           berkarya membuat masjid lebih baik.
           </Paragraph>
-        <StyledButton>LEBIH LANJUT</StyledButton>
+        <StyledButton data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="center-bottom">LEBIH LANJUT</StyledButton>
       </LeftContainer>
     </Row>
   </Section >
