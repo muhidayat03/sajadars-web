@@ -2,11 +2,14 @@ import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
 import BannerImage from "../../assets/banner_image.svg";
 import Button from "../../components/Button";
-import { Title, BigTitle, Paragraph } from "../../components/Typography"
+import { Title, BigTitle, Paragraph } from "../../components/Typography";
+import LinkComponent from '../../components/LinkComponent'
+
+
 
 const Header = () => (
-  <Section>
-    <Row direction='row-reverse' align='flex-end'>
+  <Section id='banner-section'>
+    <StyledRow direction='row-reverse' align='flex-end'>
       <RightContainer lg={2} md={1} sm={1}>
         <div style={{ paddingTop: 40 }}>
           <Image data-aos="zoom-in" data-aos-anchor-placement="center-bottom" src={BannerImage} alt="Banner" />
@@ -21,9 +24,11 @@ const Header = () => (
           fasilitasnya. Mari berkontribusi bersama kami untuk beramal dan
           berkarya membuat masjid lebih baik.
           </Paragraph>
-        <StyledButton data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="center-bottom">LEBIH LANJUT</StyledButton>
+        <LinkComponent to='about-section'>
+          <StyledButton data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="center-bottom">LEBIH LANJUT</StyledButton>
+        </LinkComponent>
       </LeftContainer>
-    </Row>
+    </StyledRow>
   </Section >
 );
 
@@ -60,4 +65,9 @@ const StyledButton = styled(Button)`
   @media only screen and (max-width: 600px) {
     margin-bottom: 20px;
   } 
+`;
+
+const StyledRow = styled(Row)`
+  max-width: 1280px;
+  margin: auto;
 `;
