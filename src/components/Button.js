@@ -14,6 +14,9 @@ const Button = styled.button`
   :hover {
     background: #4fbc9d;
   }
+  :focus{
+    outline: none;
+  }
 `;
 
 export default Button;
