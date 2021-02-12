@@ -11,6 +11,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
 import { Element } from "react-scroll";
+import styled from 'styled-components';
+
 
 
 
@@ -24,7 +26,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div style={{ paddingTop: 60 }}>
+      <ContentSection>
         <Element name="banner-section" className="element">
           <BannerSection />
         </Element>
@@ -41,10 +43,17 @@ function App() {
           <TeamSection />
         </Element>
         <YoutubeSection />
-      </div>
+      </ContentSection>
       <Footer />
     </div>
   );
 }
+
+const ContentSection = styled.div`
+  padding-top: 60px;
+  @media only screen and (max-width: 600px) { 
+  padding-top: 80px;
+  } 
+`;
 
 export default App;
