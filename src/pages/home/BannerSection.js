@@ -40,7 +40,7 @@ const Section = styled.div`
 
 const LeftContainer = styled(Col)`
   @media only screen and (min-width: 600px) {
-    padding : 40px 20px 40px 0px;
+    padding : 40px 20px;
   } 
 `;
 
