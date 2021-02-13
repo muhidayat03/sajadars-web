@@ -3,7 +3,7 @@ import { MediumTitle } from './Typography';
 import SocialLogo from 'social-logos';
 
 
-const Header = () =>
+const Footer = () =>
   <Section >
     <FooterContainer>
       <MediumTitle >SAJADARS <span style={{ color: '#B3B3B3' }}>PROJECT</span></MediumTitle>
@@ -16,7 +16,7 @@ const Header = () =>
     </FooterContainer>
   </Section >
 
-export default Header;
+export default Footer;
 
 
 const Section = styled.div`
