@@ -1,24 +1,22 @@
 
-import { Row, Col } from '../../components/Grid';
+import Youtube from '../../components/Youtube';
 import styled from 'styled-components';
 
-
-
-const Header = () =>
+const YoutubeSection = () =>
   <Section>
-    <Row>
-      <Col>
-        <h1>Youtube Section</h1>
-      </Col>
-    </Row>
+    <YoutubeContainer>
+      <Youtube src={"https://www.youtube.com/embed/8ASnyL_fZxQ?&autoplay=1&mute=1&enablejsapi=1&loop=1"} />
+    </YoutubeContainer>
   </Section>
 
-export default Header;
+export default YoutubeSection;
 
 
 const Section = styled.div`
-  width: 100%; 
-  background-color: #f1f1f1;
-  border-bottom: 1px solid #ccc;
-  height: 600px;
+  width: 100%;  
+  background-color: black;
+`
+const YoutubeContainer = styled.div`
+  max-width: 1280px;
+  margin: auto;  
 `
