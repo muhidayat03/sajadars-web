@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { MediumTitle } from './Typography';
-import { Row } from './Grid';
-
+import SocialLogo from 'social-logos';
 
 
 const Header = () =>
@@ -10,9 +9,9 @@ const Header = () =>
       <MediumTitle >SAJADARS <span style={{ color: '#B3B3B3' }}>PROJECT</span></MediumTitle>
       <Underine />
       <CircleImagContainer>
-        <CircleImage></CircleImage>
-        <CircleImage></CircleImage>
-        <CircleImage></CircleImage>
+        <SocialLogo icon="twitter" size={32} style={{ margin: '0 10px' }} />
+        <SocialLogo icon="facebook" size={32} style={{ margin: '0 10px' }} />
+        <SocialLogo icon="instagram" size={32} style={{ margin: '0 10px' }} />
       </CircleImagContainer>
     </FooterContainer>
   </Section >
@@ -33,7 +32,7 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;  
-  padding: 48px 20px;
+  padding: 60px 20px;
 `;
 
 const Underine = styled.div`
@@ -43,9 +42,13 @@ const Underine = styled.div`
   margin-top: 12px;
 `;
 
-const CircleImage = styled.div`
+//masi blm dapet icon sossial media yang cocok, jadi component ini  blum kepake
+const CircleImage = styled.div` 
   width: 42px;
   height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%; 
   background-color: white; 
   margin: 8px;

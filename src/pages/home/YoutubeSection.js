@@ -1,6 +1,6 @@
 
 import Youtube from '../../components/Youtube';
-import styled from 'styled-components';
+import styled from 'styled-components'; 
 
 const YoutubeSection = () =>
   <Section>
