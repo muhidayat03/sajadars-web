@@ -89,7 +89,7 @@ const MemberName = styled.h3`
   color: #212121;
   margin: 0; 
   @media only screen and (max-width: 400px) {
-    font-size: 26px;
+    font-size: 16px;
   } 
 `;
 
