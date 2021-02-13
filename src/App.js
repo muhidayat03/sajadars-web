@@ -51,8 +51,8 @@ function App() {
 
 const ContentSection = styled.div`
   padding-top: 60px;
-  @media only screen and (max-width: 600px) {  
-  background-color: red;
+  @media only screen and (max-width: 600px) { 
+  padding-top: 80px;
   } 
 `;
 
