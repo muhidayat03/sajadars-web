@@ -8,7 +8,7 @@ import { BigTitle, Paragraph } from "../../components/Typography";
 
 const responsive = [
   { breakPoint: 680, cardsToShow: 3 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
-  { breakPoint: 300, cardsToShow: 2 },
+  { breakPoint: 480, cardsToShow: 2 },
 ];
 
 const TeamSection = () => <Section>
