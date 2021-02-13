@@ -6,16 +6,21 @@ import MemberImage1 from "../../assets/member-1.svg";
 import { BigTitle, Paragraph } from "../../components/Typography";
 
 
+const responsive = [
+  { breakPoint: 680, cardsToShow: 3 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
+  { breakPoint: 300, cardsToShow: 2 },
+];
+
 const TeamSection = () => <Section>
   <StyledRow>
     <StyledCol sm={1} md={1} xl={1}>
       <SectionContainer>
-        <BigTitle data-aos="zoom-in">OUR TEAM</BigTitle>
+        <BigTitle data-aos="zoom-in">Our Team</BigTitle>
         <Paragraph data-aos="fade-up">
           Kami memiliki komitmen yang tinggi <br />
             untuk selalu membuat masjid menjadi lebih baik
           </Paragraph>
-        <Slider cardsToShow={3} showArrows={false} autoSlide={4000}>
+        <Slider responsive={responsive} showArrows={false} autoSlide={4000}>
           <MemberComponent src={MemberImage1} memberName='Jundi Imadh' title='CEO' />
           <MemberComponent src={MemberImage1} memberName='Jundi Imadh' title='CEO' />
           <MemberComponent src={MemberImage1} memberName='Jundi Imadh' title='CEO' />
@@ -84,7 +89,7 @@ const MemberName = styled.h3`
   color: #212121;
   margin: 0; 
   @media only screen and (max-width: 400px) {
-    font-size: 28px;
+    font-size: 26px;
   } 
 `;
 
@@ -95,7 +100,7 @@ const MemberTitle = styled.p`
   font-size: 16px;
   color: #37806B;
   @media only screen and (max-width: 400px) { 
-    font-size: 18px;
+    font-size: 14px;
   } 
 `;
 
