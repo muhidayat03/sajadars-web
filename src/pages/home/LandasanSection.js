@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Row, Col } from "../../components/Grid";
 import LandasanImage1 from "../../assets/landasan1.svg";
-import LandasanImage2 from "../../assets/landasan2.svg";
+// import LandasanImage2 from "../../assets/landasan2.svg";
 import ArrowButton from "../../components/ArrowButton";
 import { ReactComponent as ArrowRight } from "../../assets/arrow-right.svg";
 import { ReactComponent as ArrowLeft } from "../../assets/arrow-left.svg";
@@ -31,8 +31,8 @@ const Header = () => {
   return (
     <Section>
       <StyledRow>
-        <Col lg={2} md={1} sm={1}>
-          <Image src={type === "first" ? LandasanImage1 : LandasanImage2} />
+        <Col lg={2} md={1} sm={0}>
+          <Image src={type === "first" ? LandasanImage1 : LandasanImage1} />
         </Col>
         <Col direction="column" lg={2} md={1} sm={1}>
           <Col padding="1.4rem 0" margin="0 0 60px 0" align="flex-end">
@@ -54,7 +54,7 @@ const Header = () => {
             {type === "first" ? (
               landasan.map((item, idx) => (
                 <Col justify="flex-start" align="start" padding="0px">
-                  <CheckedIcon style={{ marginRight: 15 }} />
+                  <StyledCheckedIcon />
                   <Content key={idx}>{item}</Content>
                 </Col>
               ))
@@ -64,7 +64,7 @@ const Header = () => {
                 {misi.map((item, idx) => (
                   <>
                     <Col justify="flex-start" align="start" padding="0px">
-                      <CheckedIcon style={{ marginRight: 15 }} />
+                      <StyledCheckedIcon />
                       <Content key={idx}>{item}</Content>
                     </Col>
                   </>
@@ -115,11 +115,16 @@ const Subtitle = styled.label`
 const Content = styled.span`
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: ${(props) => props.mb};
+  margin-bottom: ${(props) => props.mb || "20px"};
 `;
 
 const StyledArrowButton = styled(ArrowButton)`
   color: ${(props) => props.color};
   background-color: ${(props) => props.bgColor || "#fff"};
   margin-left: ${(props) => props.mlBtn || "auto"};
+`;
+
+const StyledCheckedIcon = styled(CheckedIcon)`
+  margin: 7px 15px 0 0;
+  flex: none;
 `;
