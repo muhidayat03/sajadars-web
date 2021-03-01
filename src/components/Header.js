@@ -6,11 +6,10 @@ import LinkComponent from './LinkComponent'
 
 const Header = () =>
   <Section >
-    <Navbar class="navigation">
+    <Navbar className="navigation">
       <LinkComponent to="banner-section">
         <Logo src={LogoImage} alt='logo' />
       </LinkComponent>
-
       <Menu>
         <StyledLink to="banner-section">
           HOME

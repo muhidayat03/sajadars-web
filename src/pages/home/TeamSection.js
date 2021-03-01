@@ -4,6 +4,12 @@ import Slider from "react-styled-carousel";
 import MemberImage1 from "../../assets/member-1.svg";
 import { BigTitle, Paragraph } from "../../components/Typography";
 
+import { Row, Col } from "../../components/Grid";
+import styled from "styled-components";
+import Slider from "react-styled-carousel";
+import MemberImage1 from "../../assets/member-1.svg";
+import { BigTitle, Paragraph } from "../../components/Typography";
+
 const responsive = [
   { breakPoint: 680, cardsToShow: 3 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
   { breakPoint: 480, cardsToShow: 2 },
@@ -54,6 +60,14 @@ const TeamSection = () => (
 );
 
 export default TeamSection;
+
+const MemberComponent = ({ src, memberName, title }) => (
+  <MemberImageContainer>
+    <MemberImage src={src} />
+    <MemberName>{memberName}</MemberName>
+    <MemberTitle>{title}</MemberTitle>
+  </MemberImageContainer>
+);
 
 const MemberComponent = ({ src, memberName, title }) => (
   <MemberImageContainer>

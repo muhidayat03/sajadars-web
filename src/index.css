@@ -17,4 +17,6 @@ code {
 
 * {
   box-sizing: border-box;
+  outline: 0;
+  outline: none;
 }
