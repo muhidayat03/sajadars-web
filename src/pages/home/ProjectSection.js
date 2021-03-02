@@ -48,12 +48,14 @@ const Number = styled.h2`
 `;
 
 const LeftContainer = styled(Col)`
+  overflow-x: hidden;
   @media only screen and (min-width: 600px) {
     align-items: flex-start;
   }
 `;
 
 const RightContainer = styled(Col)`
+  overflow-x: hidden;
   @media only screen and (max-width: 600px) {
     padding: 0px;
   }
