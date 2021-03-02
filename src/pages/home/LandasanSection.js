@@ -14,6 +14,7 @@ const Header = () => {
   const [count, setCount] = useState(0);
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     autoplaySpeed: 8000,
@@ -36,7 +37,7 @@ const Header = () => {
     <Section id="banner-section">
       <div onClick={() => {}}></div>
       <StyledRow direction="row" align="flex-end">
-        <RightContainer lg={2} md={1} sm={1}>
+        <LeftContainer lg={2} md={1} sm={1}>
           <div style={{ paddingTop: 40 }}>
             <Image
               data-aos="zoom-in"
@@ -45,9 +46,9 @@ const Header = () => {
               alt="Banner"
             />
           </div>
-        </RightContainer>
-        <LeftContainer lg={2} md={1} sm={1} direction="column" align="start">
-          <ButtonContainer style={{ marginBottom: 20 }}>
+        </LeftContainer>
+        <RightContainer lg={2} md={1} sm={1} direction="column" align="start">
+          <ButtonContainer style={{ marginBottom: 20 }} data-aos="zoom-out">
             <CircleBUtton onClick={prevSlide}>
               <ChevronLeft />
             </CircleBUtton>
@@ -93,7 +94,7 @@ const Header = () => {
               </div>
             </Slider>
           </div>
-        </LeftContainer>
+        </RightContainer>
       </StyledRow>
     </Section>
   );
@@ -110,14 +111,14 @@ const Section = styled.div`
   }
 `;
 
-const LeftContainer = styled(Col)`
+const RightContainer = styled(Col)`
   @media only screen and (min-width: 600px) {
     padding: 48px;
     align-items: flex-start;
   }
 `;
 
-const RightContainer = styled(Col)`
+const LeftContainer = styled(Col)`
   @media only screen and (max-width: 600px) {
     padding: 0px;
   }
