@@ -153,7 +153,7 @@ const Timeline = ({ first, last, adaptive, children, title }) => {
       <Line first={first} last={last} adaptive={adaptive}></Line>
       <Circle></Circle>
       <div style={{ marginLeft: 36 }}>
-        <Title>{title}</Title>
+        <Title color="black">{title}</Title>
         <Description>{children}</Description>
       </div>
     </div>

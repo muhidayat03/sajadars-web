@@ -25,9 +25,8 @@ function App() {
   return (
     <div>
       <WhatsAppWidget
-        phoneNumber="6281226236098"
+        phoneNumber="6281240218999"
         companyName="Sajadars Team"
-        // message="Haloo! 👋🏼 ada yang bisa kami bantu?"
         message={`Haloo! 👋🏼 \nada yang bisa kami bantu?`}
         sendButton="Kirim"
         textReplyTime="online"
