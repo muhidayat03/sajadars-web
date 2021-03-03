@@ -72,61 +72,73 @@ const TeamSection = () => (
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
               <MemberComponent
                 src={MemberImage1}
                 memberName="Jundi Imadh"
+                title="CEO"
                 small
               />
             </Slider>
