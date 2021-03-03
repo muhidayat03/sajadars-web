@@ -38,7 +38,7 @@ const Section = styled.div`
   background-color: white;
   padding: 40px;
   @media only screen and (max-width: 600px) {
-    padding: 0px;
+    padding: 40px 0px;
   }
 `;
 
