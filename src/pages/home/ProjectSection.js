@@ -11,7 +11,7 @@ const Header = () => (
     <StyledRow direction="row-reverse" align="center">
       <RightContainer lg={2} md={1} sm={1}>
         <div style={{ paddingTop: 40 }}>
-          <ImageContainer data-aos="fade-left">
+          <ImageContainer data-aos="zoom-in-left">
             <ImageWrapper>
               <Image src={BannerImage} />
             </ImageWrapper>
@@ -21,7 +21,7 @@ const Header = () => (
       </RightContainer>
       <LeftContainer lg={2} md={1} sm={1} direction="column" align="start">
         <BannerContainer>
-          <Number data-aos="fade-right">20</Number>
+          <Number data-aos="zoom-in-right">20</Number>
           <StyledBigTitle data-aos="fade-right">
             Project Berhasil Kami Selesaikan
           </StyledBigTitle>
