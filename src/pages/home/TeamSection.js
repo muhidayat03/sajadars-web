@@ -5,58 +5,142 @@ import MemberImage1 from "../../assets/member-1.svg";
 import { BigTitle, Paragraph } from "../../components/Typography";
 
 const responsive = [
-  { breakPoint: 680, cardsToShow: 3 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
-  { breakPoint: 480, cardsToShow: 2 },
-  { breakPoint: 0, cardsToShow: 1 },
+  { breakPoint: 800, cardsToShow: 5 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
+  { breakPoint: 600, cardsToShow: 3 },
+  { breakPoint: 400, cardsToShow: 2 },
+  { breakPoint: 0, cardsToShow: 2 },
 ];
 
 const TeamSection = () => (
-  <Section>
-    <StyledRow>
-      <StyledCol sm={1} md={1} xl={1}>
-        <SectionContainer>
-          <BigTitle data-aos="zoom-in">Our Team</BigTitle>
-          <Paragraph data-aos="fade-up">
-            Kami memiliki komitmen yang tinggi <br />
-            untuk selalu membuat masjid menjadi lebih baik
-          </Paragraph>
-          <Slider responsive={responsive} showArrows={false} autoSlide={4000}>
-            <MemberComponent
-              src={MemberImage1}
-              memberName="Jundi Imadh"
-              title="CEO"
-            />
-            <MemberComponent
-              src={MemberImage1}
-              memberName="Jundi Imadh"
-              title="CEO"
-            />
-            <MemberComponent
-              src={MemberImage1}
-              memberName="Jundi Imadh"
-              title="CEO"
-            />
-            <MemberComponent
-              src={MemberImage1}
-              memberName="Jundi Imadh"
-              title="CEO"
-            />
-            <MemberComponent
-              src={MemberImage1}
-              memberName="Jundi Imadh"
-              title="CEO"
-            />
-          </Slider>
-        </SectionContainer>
-      </StyledCol>
-    </StyledRow>
-  </Section>
+  <>
+    <Section>
+      <StyledRow>
+        <StyledCol sm={1} md={1} xl={1}>
+          <SectionContainer>
+            <BigTitle data-aos="zoom-in">Our Team</BigTitle>
+            <Paragraph data-aos="fade-up">
+              Kami memiliki komitmen yang tinggi <br />
+              untuk selalu membuat masjid menjadi lebih baik
+            </Paragraph>
+            <Row justify="center">
+              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+                <MemberComponent
+                  src={MemberImage1}
+                  memberName="Jundi Imadh"
+                  title="CEO"
+                />
+              </Col>
+              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+                <MemberComponent
+                  src={MemberImage1}
+                  memberName="Jundi Imadh"
+                  title="CEO"
+                />
+              </Col>
+              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+                <MemberComponent
+                  src={MemberImage1}
+                  memberName="Jundi Imadh"
+                  title="CEO"
+                />
+              </Col>
+              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+                <MemberComponent
+                  src={MemberImage1}
+                  memberName="Jundi Imadh"
+                  title="CEO"
+                />
+              </Col>
+              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+                <MemberComponent
+                  src={MemberImage1}
+                  memberName="Jundi Imadh"
+                  title="CEO"
+                />
+              </Col>
+            </Row>
+          </SectionContainer>
+        </StyledCol>
+      </StyledRow>
+    </Section>
+    <Section style={{ background: "white" }}>
+      <StyledRow>
+        <StyledCol sm={1} md={1} xl={1} direction="column">
+          <BigTitle data-aos="zoom-in">Our Collaborator</BigTitle>
+          <SectionContainer>
+            <Slider responsive={responsive} showArrows={true} autoSlide={3000}>
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+              <MemberComponent
+                src={MemberImage1}
+                memberName="Jundi Imadh"
+                small
+              />
+            </Slider>
+          </SectionContainer>
+        </StyledCol>
+      </StyledRow>
+    </Section>
+  </>
 );
 
 export default TeamSection;
 
-const MemberComponent = ({ src, memberName, title }) => (
-  <MemberImageContainer>
+const MemberComponent = ({ src, memberName, title, small }) => (
+  <MemberImageContainer small={small}>
     <MemberImage src={src} />
     <MemberName>{memberName}</MemberName>
     <MemberTitle>{title}</MemberTitle>
@@ -92,12 +176,16 @@ const MemberImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  ${({ small }) =>
+    small &&
+    `
+    transform: scale(.8);
+    `}
 `;
 
 const MemberImage = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 20px auto;
   display: block;
   border-radius: 50%;
