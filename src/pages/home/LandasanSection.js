@@ -1,6 +1,6 @@
 import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
-import BannerImage from "../../assets/landasan_image.svg";
+import BannerImage from "../../assets/masjid3.png";
 import { Title, BigTitle, Paragraph } from "../../components/Typography";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
