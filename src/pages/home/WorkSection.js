@@ -5,12 +5,12 @@ import { Title, BigTitle, Paragraph } from "../../components/Typography";
 const WorkSection = () => (
   <Section id="banner-section">
     <StyledRow align="center">
-      <Container lg={1} md={1} sm={1} direction="column">
-        <BigTitle data-aos="fade-up">
+      <Container lg={1} md={1} sm={1} direction="column" align="start">
+        <BigTitle data-aos="fade-left">
           Bagaimana Kami <br /> Bekerja
         </BigTitle>
         <div style={{ width: "100%", marginTop: 40 }}>
-          <Row padding="0">
+          <Row padding="0" justify="space-between">
             <Col
               lg={2}
               md={1}
@@ -20,21 +20,23 @@ const WorkSection = () => (
               data-aos="fade-right"
               align="flex-start"
             >
-              <Timeline first title="Project Source">
-                Mendapat project dari sosial media,
-                <br />
-                relasi anggota, atau kerjasama
-              </Timeline>
-              <Timeline title="Briefing">
-                Menggali informasi dari klien
-                <br />
-                oleh PR (Public Relation)
-              </Timeline>
-              <Timeline last adaptive title="Pembagian Tugas">
-                pembagian tugas kepada kontributor sajadars
-                <br />
-                oleh project manager
-              </Timeline>
+              <TimelineWrapper>
+                <Timeline first title="Project Source">
+                  Mendapat project dari sosial media,
+                  <br />
+                  relasi anggota, atau kerjasama
+                </Timeline>
+                <Timeline title="Briefing">
+                  Menggali informasi dari klien
+                  <br />
+                  oleh PR (Public Relation)
+                </Timeline>
+                <Timeline last adaptive title="Pembagian Tugas">
+                  pembagian tugas kepada kontributor sajadars
+                  <br />
+                  oleh project manager
+                </Timeline>
+              </TimelineWrapper>
             </Col>
             <Col
               lg={2}
@@ -45,19 +47,21 @@ const WorkSection = () => (
               data-aos="fade-left"
               align="flex-start"
             >
-              <Timeline first adaptive title="Pengerjaan">
-                pengerjaan maksimal 2 bulan
-                <br />
-                dengan progress mingguan (diskusi)
-              </Timeline>
-              <Timeline title="Output">
-                penyerahan softfile/hardfile gambar
-                <br />
-                keseluruhan kepada klien
-              </Timeline>
-              <Timeline last title="Revisi">
-                jika diperlukan supervisi
-              </Timeline>
+              <TimelineWrapper>
+                <Timeline first adaptive title="Pengerjaan">
+                  pengerjaan maksimal 2 bulan
+                  <br />
+                  dengan progress mingguan (diskusi)
+                </Timeline>
+                <Timeline title="Output">
+                  penyerahan softfile/hardfile gambar
+                  <br />
+                  keseluruhan kepada klien
+                </Timeline>
+                <Timeline last title="Revisi">
+                  jika diperlukan supervisi
+                </Timeline>
+              </TimelineWrapper>
             </Col>
           </Row>
         </div>
@@ -74,6 +78,12 @@ const Section = styled.div`
   padding: 40px;
   @media only screen and (max-width: 600px) {
     padding: 40px 0px;
+  }
+`;
+
+const TimelineWrapper = styled.div`
+  @media only screen and (min-width: 800px) {
+    margin: auto;
   }
 `;
 
