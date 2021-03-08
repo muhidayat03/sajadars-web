@@ -1,12 +1,12 @@
 import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
-import BannerImage from "../../assets/masjid3.png";
-import { Title, BigTitle, Paragraph } from "../../components/Typography";
+import BannerImage from "../../assets/masjid3.gif";
+import { Title, BigTitle } from "../../components/Typography";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef, useState } from "react";
-import { ChevronRight, ChevronLeft, Check } from "react-feather";
+import { ChevronRight, ChevronLeft } from "react-feather";
 import CheckList from "../../components/CheckList";
 
 const Header = () => {

@@ -1,10 +1,7 @@
 import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
 import BannerImage from "../../assets/work_image.svg";
-
-import Button from "../../components/Button";
-import { Title, BigTitle, MediumTitle } from "../../components/Typography";
-import LinkComponent from "../../components/LinkComponent";
+import { BigTitle } from "../../components/Typography";
 
 const Header = () => (
   <Section id="banner-section">
