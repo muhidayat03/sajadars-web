@@ -23,7 +23,7 @@ function App() {
     });
   }, []);
   return (
-    <div>
+    <>
       <WhatsAppWidget
         phoneNumber="6281240218999"
         companyName="Sajadars Team "
@@ -51,7 +51,7 @@ function App() {
         <YoutubeSection />
       </ContentSection>
       <Footer />
-    </div>
+    </>
   );
 }
 
