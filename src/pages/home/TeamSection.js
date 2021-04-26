@@ -140,6 +140,24 @@ const TeamSection = () => (
                 // title="CEO"
                 small
               />
+              <MemberComponent
+                src={Circle}
+                memberName="Muhammad Hidayat"
+                // title="CEO"
+                small
+              />
+              <MemberComponent
+                src={Circle}
+                memberName="Ridwan Fajar"
+                // title="CEO"
+                small
+              />
+              <MemberComponent
+                src={Circle}
+                memberName="Aminah R. Makhtum"
+                // title="CEO"
+                small
+              />
             </Slider>
           </SectionContainer>
         </StyledCol>
