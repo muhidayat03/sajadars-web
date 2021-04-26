@@ -1,6 +1,6 @@
 import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
-import BannerImage from "../../assets/masjid2.gif";
+import BannerImage from "../../assets/banner_image.gif";
 import Button from "../../components/Button";
 import { Title, BigTitle, Paragraph } from "../../components/Typography";
 import LinkComponent from "../../components/LinkComponent";

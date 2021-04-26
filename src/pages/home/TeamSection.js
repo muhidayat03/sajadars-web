@@ -1,8 +1,13 @@
 import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
-import Slider from "react-styled-carousel";
-import MemberImage1 from "../../assets/member-1.svg";
+import Slider from "react-styled-carousel"; 
 import { BigTitle, Paragraph } from "../../components/Typography";
+import Jundi from "../../assets/circle-jundi.png";
+import Abdurrohim from "../../assets/circle-abdurrohim.png";
+import Afni from "../../assets/circle-afni.png";
+import Achmdad from "../../assets/circle-achmad.png";
+import Wildan from "../../assets/circle-wildan.png";
+import Circle from "../../assets/circle.jpeg";
 
 const responsive = [
   { breakPoint: 800, cardsToShow: 5 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
@@ -25,37 +30,37 @@ const TeamSection = () => (
             <Row justify="center">
               <Col lg="3" md="3" sm="2" xs="2" padding="0">
                 <MemberComponent
-                  src={MemberImage1}
-                  memberName="Jundi Imadh"
-                  title="CEO"
+                  src={Jundi}
+                  memberName="Jundi Imaduddin Alwan"
+                  title="CEO / Founder"
                 />
               </Col>
               <Col lg="3" md="3" sm="2" xs="2" padding="0">
                 <MemberComponent
-                  src={MemberImage1}
-                  memberName="Jundi Imadh"
-                  title="CEO"
+                  src={Abdurrohim}
+                  memberName="I’tishom Abdu Rohiim"
+                  title="Quality Control / Co-Founder"
                 />
               </Col>
               <Col lg="3" md="3" sm="2" xs="2" padding="0">
                 <MemberComponent
-                  src={MemberImage1}
-                  memberName="Jundi Imadh"
-                  title="CEO"
+                  src={Afni}
+                  memberName="Afni Krisnawangseh"
+                  title="Secretary / Co-Founder"
                 />
               </Col>
               <Col lg="3" md="3" sm="2" xs="2" padding="0">
                 <MemberComponent
-                  src={MemberImage1}
-                  memberName="Jundi Imadh"
-                  title="CEO"
+                  src={Achmdad}
+                  memberName="Achmad Huda Fauzan"
+                  title="Project Manager / Co-Founder"
                 />
               </Col>
               <Col lg="3" md="3" sm="2" xs="2" padding="0">
                 <MemberComponent
-                  src={MemberImage1}
-                  memberName="Jundi Imadh"
-                  title="CEO"
+                  src={Wildan}
+                  memberName="Muhammad Wildan Labieb"
+                  title="Public Relation / Co-Founder"
                 />
               </Col>
             </Row>
@@ -70,75 +75,69 @@ const TeamSection = () => (
           <SectionContainer>
             <Slider responsive={responsive} showArrows={true} autoSlide={3000}>
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Imanullah  Nur Amala"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Qomarudin"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Muhammad Ibrahim"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Roikhatul Habibah"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Galaz Anugrah"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Syamsul Azhari R"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Zuhria Sulkha Amalia"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Erlangga Dwi Pamungkas"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Riska Maharini"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Umara Hasmarani Rizqiyah"
+                // title="CEO"
                 small
               />
               <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
-                small
-              />
-              <MemberComponent
-                src={MemberImage1}
-                memberName="Jundi Imadh"
-                title="CEO"
+                src={Circle}
+                memberName="Ardhita Rendra Pristyawan"
+                // title="CEO"
                 small
               />
             </Slider>

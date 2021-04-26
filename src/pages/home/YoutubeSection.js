@@ -6,13 +6,13 @@ const YoutubeSection = () => (
     <YoutubeContainer>
       <Youtube
         src={
-          "https://www.youtube.com/embed/8ASnyL_fZxQ?&autoplay=1&mute=1&enablejsapi=1&loop=1&playlist=8ASnyL_fZxQ"
+          "https://www.youtube.com/embed/40TWHxqpquU?&autoplay=1&mute=1&enablejsapi=1&loop=1&playlist=40TWHxqpquU"
         }
       />
     </YoutubeContainer>
   </Section>
 );
-
+ 
 export default YoutubeSection;
 
 const Section = styled.div`
