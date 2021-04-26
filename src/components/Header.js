@@ -21,7 +21,7 @@ const Header = () =>
           WORKFLOW
         </StyledLink>
         <StyledLink to="project-section">
-          PROJECT
+          PROJECT 
         </StyledLink>
         <StyledLink to="team-section">
           TEAM
