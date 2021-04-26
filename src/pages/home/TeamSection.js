@@ -1,6 +1,6 @@
 import { Row, Col } from "../../components/Grid";
 import styled from "styled-components";
-import Slider from "react-styled-carousel"; 
+import Slider from "react-styled-carousel";
 import { BigTitle, Paragraph } from "../../components/Typography";
 import Jundi from "../../assets/circle-jundi.png";
 import Abdurrohim from "../../assets/circle-abdurrohim.png";
@@ -28,35 +28,70 @@ const TeamSection = () => (
               untuk selalu membuat masjid menjadi lebih baik
             </Paragraph>
             <Row justify="center">
-              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+              <Col
+                lg="3"
+                md="3"
+                sm="2"
+                xs="2"
+                padding="0"
+                style={{ marginTop: 20 }}
+              >
                 <MemberComponent
                   src={Jundi}
                   memberName="Jundi Imaduddin Alwan"
                   title="CEO / Founder"
                 />
               </Col>
-              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+              <Col
+                lg="3"
+                md="3"
+                sm="2"
+                xs="2"
+                padding="0"
+                style={{ marginTop: 20 }}
+              >
                 <MemberComponent
                   src={Abdurrohim}
                   memberName="I’tishom Abdu Rohiim"
                   title="Quality Control / Co-Founder"
                 />
               </Col>
-              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+              <Col
+                lg="3"
+                md="3"
+                sm="2"
+                xs="2"
+                padding="0"
+                style={{ marginTop: 20 }}
+              >
                 <MemberComponent
                   src={Afni}
                   memberName="Afni Krisnawangseh"
                   title="Secretary / Co-Founder"
                 />
               </Col>
-              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+              <Col
+                lg="3"
+                md="3"
+                sm="2"
+                xs="2"
+                padding="0"
+                style={{ marginTop: 20 }}
+              >
                 <MemberComponent
                   src={Achmdad}
                   memberName="Achmad Huda Fauzan"
                   title="Project Manager / Co-Founder"
                 />
               </Col>
-              <Col lg="3" md="3" sm="2" xs="2" padding="0">
+              <Col
+                lg="3"
+                md="3"
+                sm="2"
+                xs="2"
+                padding="0"
+                style={{ marginTop: 20 }}
+              >
                 <MemberComponent
                   src={Wildan}
                   memberName="Muhammad Wildan Labieb"
